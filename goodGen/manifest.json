@@ -1,0 +1,22 @@
+{
+  "name": "GoodGen",
+  "version": "1.0",
+  "description": "Open LibGen directly from a Goodreads book",
+  "permissions": ["activeTab"],
+  "optional_permissions": [
+    "*://goodreads.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "icons": {
+    "16": "images/goodGen16.png",
+    "32": "images/goodGen32.png",
+    "48": "images/goodGen48.png",
+    "128": "images/goodGen128.png"
+  },
+  "manifest_version": 2
+}
